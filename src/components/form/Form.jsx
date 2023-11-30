@@ -122,12 +122,13 @@ function Form(props) {
                     </div>
                 </div>
 
-            <button type='submit' onClick={(event) => {
-                event.preventDefault()
-                if(props.holder && props.number && props.month && props.year && props.cvc) props.setSubmit(true)}}>
+                <button type='submit' onClick={(event) => {
+               handleSubmit(event)
+                if(props.holder && props.number && props.month && props.year && props.cvc) {
+                    props.setSubmit(true)}}}>
                 Confirm
             </button>
-                    
+
         </div>
 
      </form>

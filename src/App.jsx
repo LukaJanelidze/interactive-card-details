@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Form from './components/form/Form'
-import Submit from './components/submit/Submit'
+import Form from './components/Form/Form'
+import Submit from './components/Submit/Submit'
 import Cards from './components/Cards/Cards'
 import './App.css'
 
