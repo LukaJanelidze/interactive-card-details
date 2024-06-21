@@ -1,0 +1,258 @@
+.first-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--White, #FFF);
+    height: 704px;
+}
+
+.card-holder {
+    display: flex;
+    width: 327px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+    margin-left: 24px;
+}
+
+.card-holder label {
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.card-holder input {
+    width: 327px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    background: var(--White, #FFF);
+    padding-left: 24px;
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-holder input::placeholder {
+    opacity: 0.25;
+}
+
+.card-number {
+    display: flex;
+    width: 327px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 20px 0 0 24px;
+}
+
+.card-number label {
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.card-number input {
+    width: 327px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    background: var(--White, #FFF);
+    padding-left: 24px;
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-number input::placeholder {
+    opacity: 0.25;
+}
+
+.cvcdate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.date-info {
+    width: 156px;
+    flex-shrink: 0;
+    margin-left: 24px;
+}
+
+.date-info label {
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.date-info #year {
+    margin-left: 8px;
+}
+
+.date-info input {
+    width: 72px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    background: var(--White, #FFF);
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 16px;
+    margin-top: 9px;
+}
+
+.date-info input::placeholder {
+    opacity: 0.25;
+}
+
+.cvc-info {
+    width: 164px;
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+.cvc-info label {
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.cvc-info input {
+    width: 164px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    background: var(--White, #FFF);
+    color: var(--Deep-Violet, #21092F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 16px;
+    margin-top: 9px;
+}
+
+.cvc-info input::placeholder {
+    opacity: 0.25;
+}
+
+.first-form button {
+    width: 327px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Deep-Violet, #21092F);
+    color: var(--White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 28px 0 0 24px;
+    border: none;
+}
+
+.error {
+    color: var(--Red, #FF5050);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .first-form {
+        flex-direction: row;
+        width: 1440px;
+    }
+
+    .information {
+        height: fit-content;
+        margin: 275px 0 0 349px;
+    }
+    
+    .card-holder {
+        width: 381px;
+        margin: 0;
+    }
+
+    .card-holder input {
+        width: 381px;
+    }
+
+    .card-number {
+        width: 381px;
+        margin: 26px 0 0 0;
+    }
+
+    .card-number input{
+        width: 381px;
+    }
+
+    .cvcdate {
+        margin: 26px 0 0 0;
+    }
+
+    .date-info {
+        width: 170px;
+        margin: 26px 0 0 0;
+    }
+
+    .date-info input {
+        width: 80px;
+    }
+
+    .date-info #year {
+        margin-left: 10px;
+    }
+
+    .cvc-info {
+        width: 191px;
+        margin: 26px 0 0 0;
+    }
+
+    .cvc-info input {
+        width: 191px;
+    }
+
+    .first-form button {
+        width: 381px;
+        margin: 40px 0 0 0;
+        cursor: pointer;
+    }
+
+}

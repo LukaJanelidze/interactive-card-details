@@ -1,0 +1,164 @@
+.cards {
+    width: 100%;
+    height: 240px;
+    flex-shrink: 0;
+    background: url('images/bg-main-mobile.png');
+    margin-bottom: 91px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cards .back-card {
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+.cards .back-card-box {
+    min-width: 286px;
+    height: 157px;
+    position: absolute;
+    top: 32px;
+    left: 73px;
+}
+
+.cards .back-card-box .card-back-cvc {
+    color: var(--White, #FFF);
+    text-align: right;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 73.64px;
+    left: 230.98px;
+    z-index: 2;
+}
+
+.cards .front-card-box {
+    width: 285px;
+    height: 156.208px;
+    position: absolute;
+    top: 126px;
+    left: 17px;
+}
+
+.cards .front-card {
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+.cards .circle {
+    width: 54px;
+    height: 30px;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 2;
+    left: 19px;
+    top: 17.6px;
+}
+
+.cards .card-numbers {
+    color: var(--White, #FFF);
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    position: absolute;
+    z-index: 2;
+    left: 19px;
+    top: 84.6px;
+}
+
+.card-holder-name {
+    color: var(--White, #FFF);
+    font-family: Space Grotesk;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    position: absolute;
+    z-index: 2;
+    left: 19px;
+    top: 124.6px;
+}
+
+.card-date {
+    color: var(--White, #FFF);
+    text-align: right;
+    font-family: Space Grotesk;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    position: absolute;
+    z-index: 2;
+    left: 232.11px;
+    top: 124.6px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        background: url(images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        width: 483px;
+        flex-shrink: 0;
+        height: 900px;
+    }
+
+    .cards .back-card-box {
+        width: 447px;
+        height: 245px;
+        top: 469px;
+        left: 278px;
+    }
+
+    .cards .back-card-box .card-back-cvc {
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 14px;
+        letter-spacing: 2px;
+        top: 111px;
+        left: 358px;
+    }
+
+    .cards .front-card-box {
+        width: 447px;
+        height: 245px;
+        top: 187px;
+        left: 164px;
+    }
+
+    .cards .circle {
+        width: 84px;
+        height: 47px;
+        top: 28px;
+        left: 32px;
+    }
+
+    .cards .card-numbers {
+        font-size: 28px;
+        top: 139px;
+        left: 32px;
+    }
+
+    .card-holder-name {
+        font-size: 14px;
+        top: 200.5px;
+        left: 32px;
+    }
+
+    .card-date {
+        top: 200.5px;
+        left: 366.14px;
+    }
+}
