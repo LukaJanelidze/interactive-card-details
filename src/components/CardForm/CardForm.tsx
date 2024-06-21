@@ -41,6 +41,10 @@ const CardForm: React.FC<FormProps> = (props) => {
       setMonthError("Can't be blank");
     }
 
+    if (parseInt(props.month) > 12) {
+      setMonthError("can't be more than 12");
+    }
+
     if (!props.year) {
       setYearError("Can't be blank");
     }
@@ -133,9 +137,9 @@ const CardForm: React.FC<FormProps> = (props) => {
         </div>
 
         <button type='submit' onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-          handleSubmit(event as any); // Handle form submission
+          handleSubmit(event as any);
           if (props.holder && props.number && props.month && props.year && props.cvc) {
-            props.setSubmit(true); // Update submit state
+            props.setSubmit(true); 
           }
         }}>
           Confirm
