@@ -1,5 +1,5 @@
 .cards {
-    width: 100%;
+    width: 375px;
     height: 240px;
     flex-shrink: 0;
     background: url('/public//images/bg-main-mobile.png');
