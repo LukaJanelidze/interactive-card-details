@@ -2,7 +2,7 @@
     width: 100%;
     height: 240px;
     flex-shrink: 0;
-    background: url('images/bg-main-mobile.png');
+    background: url('/public//images/bg-main-mobile.png');
     margin-bottom: 91px;
     display: flex;
     justify-content: center;
